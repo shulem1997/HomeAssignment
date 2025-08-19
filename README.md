@@ -38,13 +38,7 @@ npm install
 
 ---
 
-## Running server:
+## Running server
 
-cd HomeAssignment
 node server.js
-
-## API Endpoints:
-
-### IP: 13.51.133.115
-### PORT: 80
 
