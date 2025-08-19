@@ -30,3 +30,9 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 ```bash
 git clone https://github.com/shulem1997/HomeAssignment
 cd HomeAssignment
+
+2. Install dependencies:
+
+```bash
+npm install
+(npm install express)
