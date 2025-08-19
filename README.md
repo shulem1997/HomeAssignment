@@ -33,6 +33,5 @@ cd HomeAssignment
 
 2. Install dependencies:
 
-```bash
 npm install
 (npm install express)
