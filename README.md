@@ -35,6 +35,12 @@ cd HomeAssignment
 
 npm install
 (npm install express)
----
 
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) v16+ installed
+- npm
+
+---
 
