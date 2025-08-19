@@ -35,10 +35,6 @@ cd HomeAssignment
 
 npm install
 (npm install express)
-
 ---
 
-## Running server
-
-node server.js
 
