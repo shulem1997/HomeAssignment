@@ -15,8 +15,8 @@ app.get("/", (req, res) => {
   res.send("Hire Me!");
 });
 
-//server listens on port 5000
-const PORT = 12345;
+//server listens on port 80
+const PORT = 80;
 app.listen(PORT, () => {
   console.log(`Server is running`);
 });
