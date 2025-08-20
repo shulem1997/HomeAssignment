@@ -99,7 +99,7 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 - status 500
 - returns json {msg: /Error msg/}
 
-### submitted text file content:
+## submitted text file content:
 
 git repository - https://github.com/shulem1997/HomeAssignment
 
