@@ -35,7 +35,7 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 
 ---
 
-## Running
+## Running locally
 
 - node server.js
 - server will run on localhost:80
