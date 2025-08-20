@@ -86,14 +86,14 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 ### POST http://13.51.133.115:80/accounts/{account_id}/withdraw
 
 #### parameters:
-- body: {amount: <number>}
+- body: {amount: /number/}
 
 #### for valid parameters and enough money in account:
 - status 200
 - returns json {balance: /balance/}
 #### if account_id doesn't have enough money:
 - status 401
-- returns json {msg: /Error msg/>}
+- returns json {msg: /Error msg/}
 - no money is withdrawn
 #### some other error (e.g invalid parameters):
 - status 500
