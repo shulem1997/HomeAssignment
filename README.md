@@ -26,23 +26,42 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 ## Installation
 
 1. Clone the repository:
+    - git clone https://github.com/shulem1997/HomeAssignment
+    - cd HomeAssignment
 
-```bash
-git clone https://github.com/shulem1997/HomeAssignment
-cd HomeAssignment
-
-2. Install dependencies:
-
-npm install
-(npm install express)
+2. Install dependencies: 
+    - npm install
+    - (npm install express if needed)
 
 ---
 
 ## Running
 
-```bash
-node server.js
+- node server.js
+- server will run on localhost:80
+
+---
+
+## API Endpoints:
+
+- server's ip is: 13.51.133.51 
+- port 80
+- All http requests will be in this form: http://13.51.133.115:80/accounts
+
+### GET http://13.51.133.115:80/
+ - "home page"
+
+### http://13.51.133.115:80/accounts/{account_id}/balance
+
+#### if account_id exists:
+- status 200
+- returns json {balance: <balance>}
+#### if account_id doesn't exist:
+- status 404
+- returns json {msg: <Error msg>}
+#### some other error:
+- status 500
+- returns json {msg: <Error msg>}
 
 
-
-
+---
