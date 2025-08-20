@@ -99,5 +99,25 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 - status 500
 - returns json {msg: /Error msg/}
 
+### submitted text file content:
 
----
+git repository - https://github.com/shulem1997/HomeAssignment
+
+for API documentation - https://github.com/shulem1997/HomeAssignment/blob/main/README.md#api-endpoints
+
+ip - 13.51.133.115
+port - 80
+
+An example for api request execution:
+in command line (terminal for linux):
+curl -X GET http://13.51.133.115:80/accounts/{account_id}/balance
+
+This is a simple http server wtitten in NodeJS, that simulates an ATM system.
+I chose NodeJS becuase of its simplicity and my previous experience with it.
+My approach was to use the MVC architecture (with partial implemaentation, due to the task's requiremrnts) - routes and controllers are in different directories from server, for better understanding of the code structure and debugging if needed.
+
+The system's data is stored in-memory as a Map object that maps {account_id} as key to the account's balance as value. Using map allows O(1) access to the data, and therefore I deemed it to be the best approach for this task. 
+
+The main challenges for this task were thinkung about possible edge cases where the simple basic implementation woudn't suffice. One of these cases I found is withdrawing a negative amount, and the "client" would end up with more money after withdrawl. 
+
+The server is deployed on an AWS EC2 machine whose ipv4 address is specified above
