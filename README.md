@@ -57,29 +57,29 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 
 #### if account_id exists:
 - status 200
-- returns json {balance: <balance>}
+- returns json {balance: /balance/}
 #### if account_id doesn't exist:
 - status 404
-- returns json {msg: <Error msg>}
+- returns json {msg: /Error msg/}
 - accounts can be opened with the /deposit request
 #### some other error:
 - status 500
-- returns json {msg: <Error msg>}
+- returns json {msg: /Error msg/}
 
 ### POST http://13.51.133.115:80/accounts/{account_id}/deposit
 
 #### parameters:
-- body: {deposit: <number>}
+- body: {deposit: /number/}
 
 #### for valid parameters :
 - status 200
-- returns json {msg: <msg>}
+- returns json {msg: /msg/}
 #### else:
 - status 401
-- returns json {msg: <Error msg>}
+- returns json {msg: /Error msg/}
 #### some other error (e.g invalid parameters):
 - status 500
-- returns json {msg: <Error msg>}
+- returns json {msg: /Error msg/}
 
 #### Note: if account_id doesn't exist, the request opens a new account
 
@@ -90,14 +90,14 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 
 #### for valid parameters and enough money in account:
 - status 200
-- returns json {balance: <balance>}
+- returns json {balance: /balance/}
 #### if account_id doesn't have enough money:
 - status 401
-- returns json {msg: <Error msg>}
+- returns json {msg: /Error msg/>}
 - no money is withdrawn
 #### some other error (e.g invalid parameters):
 - status 500
-- returns json {msg: <Error msg>}
+- returns json {msg: /Error msg/}
 
 
 ---
