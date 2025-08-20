@@ -90,7 +90,7 @@ This is a simple Node.js server that manages accounts with basic operations: dep
 
 #### for valid parameters and enough money in account:
 - status 200
-- returns json {balance: /balance/}
+- returns json {msg: /msg/}
 #### if account_id doesn't have enough money:
 - status 401
 - returns json {msg: /Error msg/}
